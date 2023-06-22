@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Login &mdash; SD Muhammadiyah Brosot</title>
+    <title>Login &mdash; SMK LPPM RI 2 KEDUNGREJA</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ url('assets/css/components.css') }}">
 
-    <link rel="shortcut icon" href="../assets/img/sdmuhbrosot.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('logo.png') }}" type="image/x-icon">
 </head>
 
 <body>
@@ -23,9 +23,11 @@
             <div class="d-flex flex-wrap align-items-stretch">
                 <div class="col-lg-4 col-md-6 col-12 order-lg-1 mx-auto min-vh-100 order-2 bg-white">
                     <div class="p-4 m-3">
-                        <h5 class="text-dark font-weight-normal"><span class="font-weight-bold">SMK LPPM RI 2 KEDUNGREJA </span></h5>
-                        <img src="{{ asset('logo.png')  }}" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2">
-                        <h5 class="text-dark font-weight-normal">Aplikasi <span class="font-weight-bold">Inventaris Sekolah</span></h5>
+                        <div class="d-flex w-100 align-items-center flex-column">
+                            <h5 class="text-dark font-weight-normal"><span class="font-weight-bold">SMK LPPM RI 2 KEDUNGREJA </span></h5>
+                            <img src="{{ asset('logo.png')  }}" alt="logo" width="80" class="shadow-light rounded-circle mb-5 mt-2">
+                            <h5 class="text-dark font-weight-normal">Aplikasi <span class="font-weight-bold">Inventaris Sekolah</span></h5>
+                        </div>
                         <form method="POST" action="{{ route('login') }}" class="needs-validation" novalidate="">
                             @csrf
                             <div class="form-group">
