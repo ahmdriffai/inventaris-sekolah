@@ -1,10 +1,10 @@
 <div class="main-sidebar">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="index.html"><p>SMK LPPM RI 2 <br> KEDUNGREJO</p></a>
+            <a href="{{ route('home') }}"><p>SMK LPPM RI 2 <br> KEDUNGREJA</p></a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">SDMB</a>
+            <a href="{{ route('home') }}">LPPM</a>
         </div>
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>

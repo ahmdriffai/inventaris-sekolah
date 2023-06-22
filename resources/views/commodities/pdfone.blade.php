@@ -22,7 +22,7 @@
 <body>
   <table class="center" border="1" cellpadding="0" cellspacing="0">
     <tr>
-      <td rowspan="3"><img src="assets/img/sdmuhbrosotmini.png" width="75px"></td>
+      <td rowspan="3"><img src="logo.png" width="75px"></td>
       <td colspan="2">Barang Milik {{$sekolah}}</td>
     </tr>
     <tr>

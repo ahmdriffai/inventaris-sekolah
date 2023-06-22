@@ -26,7 +26,7 @@
       @foreach($commodities as $key => $commodity)
       <table class="center" border="1" cellpadding="0" cellspacing="0">
         <tr>
-          <td rowspan="3"><img src="assets/img/sdmuhbrosotmini.png" width="75px"></td>
+          <td rowspan="3"><img src="logo.png" width="75px"></td>
           <td colspan="2">{{$sekolah}}</td>
         </tr>
         <tr>
@@ -39,6 +39,7 @@
         </tr>
       </table>
       <br>
+      {{-- <br>
       @if ($key!=0)
         @if (($key+1) % 9==0)
           </td>
@@ -51,7 +52,7 @@
             <td>
           <div class="page-break"></div>
         @endif
-      @endif
+      @endif --}}
       @endforeach
     </td>
   </tr>
